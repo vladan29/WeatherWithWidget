@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.vladan.weather_widget">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/start_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgyRHQk1G36F2qPWokEaLvOkfoJWMH3_w" />
+
+        <activity android:name="com.apps.vladan.weather_widget.WidgetActivity">
+
+
+        </activity>
+
+        <receiver android:name="com.apps.vladan.weather_widget.AppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info" />
+        </receiver>
+
+        <service
+            android:name="com.apps.vladan.weather_widget.UpdateWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name="com.apps.vladan.weather_widget.PickCityActivity"
+            android:label="" />
+        <activity
+            android:name="com.apps.vladan.weather_widget.ConfigureActivity"
+            android:label="SETTINGS">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.apps.vladan.weather_widget.PickUnitActivity"
+            android:label="">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Weather_Widget</string>
+    <string name="appwidget_text">WEATHER</string>
+    <string name="add_widget">Add widget</string>
+    <string name="spinner_text">PLACE FOR PICKED UNIT</string>
+    <string name="unit_text">PICK UNIT</string>
+    <string name="set_unit_text">CONFIRM</string>
+    <string name="unit_button">PICK UNIT</string>
+    <string name="city_hint">PLACE FOR PICKED CITY</string>
+    <string name="place_button">PICK CITY</string>
+    <string name="city_unit">SET CITY AND UNIT</string>
+    <string name="empty_image">empty</string>
+    <string name="weather_icon">icon_from_open_map</string>
+    <string name="more_less">Show less</string>
+    <string name="information_provided">Weather information provided by OpenWeatherMap</string>
+
+    <string-array name="units">
+        <item>°C</item>
+        <item>&#160; F</item>
+    </string-array>
+</resources>

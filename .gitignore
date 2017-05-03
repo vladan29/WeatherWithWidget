@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.gradle/
+.idea/
+build.gradle
+build/
+gradle.properties
+gradle/
+local.properties
+settings.gradle
+weather-widget-master.iml
